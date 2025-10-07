@@ -1,0 +1,15 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
+*.tmp
+
+# IDEs / editores
+.vscode/
+.idea/
+
+# Carpetas de sistema
+node_modules/
+dist/
