@@ -222,4 +222,132 @@ body {
     /* background-color: red; */
     border: 2px solid white;
     margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* about us */
+.about_us__container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.about_us__info {
+    padding-right: 1.5rem;
+}
+
+.about_us__title {
+    font-size: 1.8rem;
+}
+
+.about_us__name {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.about_info_paragrahp {
+    font-size: 1.4rem;
+    outline: 1px solid reds;
+}
+
+.about_us__layout {
+    display: grid;
+    grid-template-areas: "left left left right";
+}
+
+.about_us__info {
+    grid-area: left;
+}
+
+.about_us__img {
+    grid-area: right;
+    /* background-color: #5b9dff; */
+}
+
+.btn--about_us {
+    text-align: left;
+    /* background-color: red; */
+}
+
+
+/* lo que obtienes al unirte a SIGMA LEVEL */
+.todo_sigma {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.todo_sigma__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+
+}
+
+.todo_sigma__title {
+    /* outline: 1px solid green; */
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.todo_sigma__item {
+    background-color: #e3cffa;
+    border-radius: 14px;
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    min-height: 400px;
+}
+
+.todo_sigma__subtitle {
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+}
+
+.todo_sigma__icon {
+    width: 40px;
+    height: 40px;
+    background-color: #9900ff;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.todo_sigma__paragrahp {
+    font-size: 1.2rem;
+    /* background-color: red; */
+}
+
+.todo_sigma_layout {
+
+    display: grid;
+    grid-template-areas:
+        "todo_sigma--1 todo_sigma--2 todo_sigma--3"
+        "todo_sigma--4 todo_sigma--5 todo_sigma--6";
+    gap: 20px;
+}
+
+.todo_sigma--1 {
+    grid-area: todo_sigma--1;
+}
+
+.todo_sigma--2 {
+    grid-area: todo_sigma--2;
+}
+
+.todo_sigma--3 {
+    grid-area: todo_sigma--3;
+}
+
+.todo_sigma--4 {
+    grid-area: todo_sigma--4;
+}
+
+.todo_sigma--5 {
+    grid-area: todo_sigma--5;
+}
+
+.todo_sigma--6 {
+    grid-area: todo_sigma--6;
 }
