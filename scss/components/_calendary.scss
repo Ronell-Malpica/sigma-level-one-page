@@ -1,0 +1,34 @@
+@use "../utils/variables" as var_global;
+@use "../mixins/mixins" as mixins;
+
+.calendary {
+    border: 1px solid tomato;
+    background: linear-gradient(180deg, var_global.$gradient-dark-color, var_global.$gradient-princiapl-color);
+    //para mantener el conten alejado de los bordes
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.calendary-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendary__title h3 {
+    color: var_global.$background-card-color;
+    // color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    // border: 1px solid red;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2rem;
+
+    @include mixins.mq(medium) {
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,126 @@
+@use "../utils/variables" as var_global;
+@use "../mixins/mixins" as mixins;
+
+.todo_sigma {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.todo_sigma__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+
+}
+
+.todo_sigma__title {
+    /* outline: 1px solid green; */
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.todo_sigma__item {
+    background-color: #e3cffa;
+    border-radius: 14px;
+    text-align: center;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    min-height: 360px;
+    // padding-bottom: rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid var_global.$primary-color;
+}
+
+.todo_sigma__subtitle {
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+}
+
+.todo_sigma__icon {
+
+    $icon-size: 4rem;
+    width: $icon-size;
+    height: $icon-size;
+    background-color: var_global.$primary-color;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.todo_sigma__paragrahp {
+    font-size: 1rem;
+    /* background-color: red; */
+}
+
+.todo_sigma_layout {
+    display: grid;
+    gap: 2rem;
+
+    @include mixins.mq(medium) {
+        grid-template-areas:
+            "todo_sigma--1 todo_sigma--2 "
+            "todo_sigma--3 todo_sigma--4"
+            " todo_sigma--5 todo_sigma--6";
+
+    }
+
+    @include mixins.mq(large) {
+        display: grid;
+
+        grid-template-areas:
+            "todo_sigma--1 todo_sigma--2 todo_sigma--3"
+            "todo_sigma--4 todo_sigma--5 todo_sigma--6";
+        gap: 2rem;
+    }
+}
+
+
+.todo_sigma--1 {
+    @include mixins.mq(large) {
+
+        grid-area: todo_sigma--1;
+    }
+
+
+}
+
+.todo_sigma--2 {
+    @include mixins.mq(large) {
+
+        grid-area: todo_sigma--2;
+    }
+}
+
+.todo_sigma--3 {
+
+    @include mixins.mq(large) {
+
+        grid-area: todo_sigma--3;
+    }
+}
+
+.todo_sigma--4 {
+    @include mixins.mq(large) {
+
+        grid-area: todo_sigma--4;
+    }
+}
+
+.todo_sigma--5 {
+    @include mixins.mq(large) {
+
+        grid-area: todo_sigma--5;
+    }
+}
+
+.todo_sigma--6 {
+
+    @include mixins.mq(large) {
+
+        grid-area: todo_sigma--6;
+    }
+}

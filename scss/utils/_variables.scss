@@ -1,0 +1,71 @@
+$breakpoints-list: (
+    small : 320px,
+    medium: 640px,
+    large: 1024px,
+    xlarge: 1440px
+);
+
+//Colores Paletas de Colores
+// Body: 16.00 px → 1.00 rem
+
+// small / figcaption: 13.33 px → 0.8333 rem
+
+// h6: 19.20 px → 1.20 rem
+
+// h5: 23.04 px → 1.44 rem
+
+// h4: 27.65 px → 1.728 rem
+
+// h3: 33.18 px → 2.0736 rem
+
+// h2: 39.81 px → 2.48832 rem
+
+// h1: 47.78 px → 2.986 rem
+// Paleta (Provisional) Luego debo de profundizar el brand:
+
+// Primario: #9300FF
+// Secundario: #393939
+//colores generales
+$primary-color: #9300FF;
+$secundary-color: #393939;
+//colors for gradiente
+$gradient-dark-color: rgba(2, 0, 36, 1) 0%;
+$gradient-princiapl-color: #9300FF 100%;
+
+$background-card-color: #e3cffa;
+
+//fontsize 
+$h1 : 2.986rem;
+$h2 :2.48832rem;
+$h3 :2.0736rem;
+$h4 :1.728rem;
+$h5: 1.44rem;
+$h6: 1.20rem;
+
+$small-font: 0.8333rem;
+
+html {
+    box-sizing: border-box;
+    /* font example */
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+// fonts
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block; // evita el espacio extra debajo (inline by default)
+    max-width: 100%; // hace que sea responsive
+    height: auto; // mantiene proporción
+    object-fit: cover; // recorta sin deformar (ideal para imágenes de fondo o hero)
+
+}

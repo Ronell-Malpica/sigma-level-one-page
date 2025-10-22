@@ -1,0 +1,40 @@
+@use "../utils/variables" as var_global;
+@use "../mixins/mixins" as mixins;
+
+.container {}
+
+//hero
+.hero-container {
+    // border: 1px solid red;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-card-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// card
+.section-card-container {
+    // background-color: yellow;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-card-grid {
+
+
+    font-size: 1rem;
+    display: grid;
+    grid-gap: 2rem;
+    text-align: center;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    margin: 0 atuo;
+    // border: 1px solid red;
+
+
+}

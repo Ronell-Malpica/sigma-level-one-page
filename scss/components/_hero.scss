@@ -1,0 +1,87 @@
+//nos traemos lo que vamos a necesitar para maquetar el component
+//variables
+// los mixins para RWD pensado en Mobile First
+@use "../utils/variables" as var_global;
+@use "../mixins/mixins" as mixins;
+
+.hero {
+
+    background: linear-gradient(180deg, var_global.$gradient-dark-color, var_global.$gradient-princiapl-color);
+    //para mantener el conten alejado de los bordes
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.hero__content {
+    // border: 1px solid green;
+    padding: 0;
+    text-align: center;
+    // background: #020024;
+}
+
+//img-container Logo sigma
+.hero__title {
+    text-align: center;
+    height: 8rem;
+    font-size: var_global.$h1;
+    color: white;
+    margin: 0;
+    // border: 1px solid yellow;
+
+    @include mixins.mq(1000px) {
+        // background-color: tomato;
+        height: 10rem;
+    }
+}
+
+.hero__img {
+    // background-color: red;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mixins.mq(1000px) {
+        // background-color: tomato;
+        height: 10rem;
+        // background-color: yellow;
+    }
+
+}
+
+.hero__subtitle {
+    // background-color: tomato;
+    // text-align: center;
+    display: inline;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.3;
+    // border: 1px solid red;
+    // padding-bottom: 0;
+
+    margin: 0;
+
+    // @include mixins.mq(small) {
+    //     border: 1px solid red;
+    // }
+
+    @include mixins.mq(474px) {
+        display: block;
+        // font-size: var_global.$h4;
+    }
+
+
+    @include mixins.mq(medium) {
+        display: block;
+        font-size: var_global.$h4;
+        line-height: 1.5;
+    }
+
+    ;
+
+}

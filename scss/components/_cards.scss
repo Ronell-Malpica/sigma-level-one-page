@@ -1,0 +1,150 @@
+@use "../utils/variables" as var_global;
+@use "../mixins/mixins" as mixins;
+
+//title part
+.title-cards {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    @include mixins.mq(medium) {
+
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+}
+
+.title-card-container {
+    // border: 1px solid purple;
+    color: var_global.$secundary-color;
+
+}
+
+.title-card-title {
+    line-height: 1.2;
+    margin: 0;
+    font-size: 1.1rem;
+    text-align: center;
+
+    @include mixins.mq(large) {
+        line-height: 1.4;
+        font-size: 1.3rem;
+    }
+
+    // font-weight: bold;
+}
+
+
+
+.br {
+    display: none;
+
+    @include mixins.mq(large) {
+        display: inline;
+    }
+}
+
+// ---------------------------SOLO CARD --------------------------------
+.section-card {
+    padding-left: 1.5rem;
+    // border: 1px solid green;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+
+}
+
+// .card {
+//     justify-self: center;
+//     border: 4px solid #222;
+//     border-radius: .9em;
+//     padding: 1rem;
+//     padding-bottom: 3rem;
+//     padding-top: 3rem;
+//     min-height: 400px;
+
+//     @include mixins.mq(medium) {
+//         margin-left: 0;
+//         margin-right: 0;
+//         margin-bottom: 0;
+//     }
+
+// }
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    // min-height: 360px;
+}
+
+$border-size-card: 3px;
+
+.card--red {
+    border: $border-size-card solid red;
+}
+
+.card--orange {
+    border: $border-size-card solid orange;
+}
+
+.card--blue {
+    border: $border-size-card solid blue;
+}
+
+$size-icon: 4rem;
+$size-icon: 8rem;
+
+.card__icon {
+    height: $size-icon;
+    width: $size-icon;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 64px;
+    height: 64px;
+    // background-color: red;
+    /* color que “pinta” el PNG */
+
+}
+
+.card__icon--red {
+    -webkit-mask: url('icon.png') no-repeat center / contain;
+    mask: url('/assets/img/icons/icon-core.png') no-repeat center / contain;
+    background-color: red;
+}
+
+.card__icon--orange {
+    -webkit-mask: url('icon.png') no-repeat center / contain;
+    mask: url('/assets/img/icons/icon-fire.png') no-repeat center / contain;
+    background-color: orange;
+}
+
+.card__icon--blue {
+    -webkit-mask: url('icon.png') no-repeat center / contain;
+    mask: url('/assets/img/icons/icon-reverse.png') no-repeat center / contain;
+    background-color: blue;
+}
+
+.card__title {
+    // border: 1px solid red;
+    font-size: 1.2rem;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.card__info {
+    color: #555;
+    font-size: .95rem;
+    text-align: center;
+    // line-height: 1.3;
+    margin: 0;
+}

@@ -1,0 +1,47 @@
+@use "../utils/variables" as var_global;
+@use "../mixins/mixins" as mixins;
+
+.info {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: #020024;
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(153, 0, 255, 1) 100%);
+}
+
+.info__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+}
+
+.info__title {
+    // padding: 0;
+    // border: 1px solid red;
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.info__subtitle {
+    // font-weight: bold;
+    font-size: 0.95rem;
+    // outline: 1px solid red;
+    color: white;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+
+.info__paragrah {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+
+}
